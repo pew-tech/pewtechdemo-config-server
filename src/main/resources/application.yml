@@ -3,7 +3,7 @@ server:
   ssl:
     enabled: true
     key-store: classpath:jorgesmacbookpro.jks
-    key-store-password: jorgesmacbookpro
+    key-store-password: '{cipher}AgC9G7CG1yKZdCqYZaDOO0Yqeb7DaTAM6hcua3VJNs17xx4j4iwFUmSzH6HKBKjulvbD4SI2YvzLJXH+Osf6yJ11Cbxdi0wU2bNCbqmo/NnQX7ceOuXlnX741p1iV7bWTPDNqJg41yqn89GTiku3IUt0f6ALyZ6wFxDg3JkuFOJfOeRh4CoyQCp1yKs77uVM+Z4tBHZn7vpmmzqGAQUrFE8V/glB2T7+UJXMWTVDKWU9gUEV0mGXfkUYWUF23F2u7U4tx5w+YRWbVKish1selY/UZWzDyrJsZhYiPLc1pZaxH+C03S1LFaLPSAQ3INtyGLkaz40ZuyagF1rVBJvahqVVFd0p8SStHrRaqklT2qvcVBldQ8dNk5rbAE4R6w3oLJfrQmuxoT0GFy+wcfWgTFiew0AFjCrhxygySpqPO2LMfwwxb/Weczv0T0bhcHm82b4MqtjDvJy7Glg9RnTsxb4FUdWTO4ig9UObla070Jf8CSvapIobCoLoQVBtaii8uCPGKYX28U5qwL2pMF2ag1wncbGpVgG47iE5Fr7PthNuGtYUOFf0nfgGt4SfnOizTt4ODAtKTwFuhdna457Dc9WLfKlW6RjVlp/tzUUwPRfLD/1f1OJWRxRY9nZcnkLcRVouiieWxn5Q2Kl3d5dX44OnRLGLTqcm2dIWK3QH4uJF6KmvHEV9NS0kIRpmXOQtfYlQYBml62P6Xx1huORUB76tj145kn174Wr2CoTl6WISLQ=='
 
 management:
   endpoints:
@@ -32,8 +32,8 @@ spring:
       server:
         git:
           uri: https://github.com/pew-tech/pewtechdemo-config-server-repo.git
-          username: svc-account-config-server-dev
-          password: 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
+          username: '{cipher}AgBjgyfeGdkYWnfD2p6nzvNqB5sVcxIEWE/r6BTLGDxyEdaRm2eGwh1j0/QzpL8C31s8mCgX7fWos4SrRUuainVw1DhsrVu/TopOuazb1iQc3Bhq5hfCXDW2oOv1suQduJD0D1OUB3HNwCx2TspDGV+MgbRquVkw43QSOA2k0l28E9aNG/Du+dzW24OjDyl/va3g6mZtYEkN2cFrsfxHydF86fWUx7oB+4csz/H3ulQ4ccnrk3xFVdy93Vh7q73EdLmd5A0iTS66/AoNtBeyvjGz9k06Dgp8fE+jaIsLdRsz/zyTGAyRME8a4AahTAzxLBHnBErmiCX+nBvLkWwm1dt5IaGlajH/BpJPhJFILBywvatwU0e0AMry/kgxyswk0UaeUBJwldCszqyH+bxTio7OQARvNrFudmOByY02ZzV2dWmFlbHUUjuMndM56lwtJUANmv+a0WWkMMkUjbTVeqgLVW/uo5H6zxmdGWzEEDZx2u656sUOxm2BaWEneTUlcvBca6uoG3PK8r1tCBgAZ1sDQp0bqwUiK9kmGk4qimTjzh0hh/lbprM387rWADnLYZseQqaKLclPTxZDkYSJPtYdotH7CZEUjwh25CQ3+yGz6g7J/3Mp2bbzuE8IY3xehUGQx1o9Gavj8N4nQ96e/9knD4VqNGMuMMxI4ueuG6umwYSdzQQw9gAEV+YExVTD9UQx48BKcqvKWxORCSXc8FzvxSwGCGXOBGmBMw8wzVDRnA=='
+          password: '{cipher}AgCVPUrneTkgry6W4zXy4EJy3Mlro1XsKIc+6R6WMiPQPJwtv5J6erROmM+BqhMhzuuzsWQl4ggYq30FV4c/GhdoehLkIO9I4ZkZbOqFQlx2sBEo+DnuRmbpOAi1qMDt+LFHfYAQoTtTDKsbS/68ydt2IusIEFBfuAdSjKofXHuZQDFXl3pTrtuiX4QoKCv5i8Opn5ypaHi6XoS+7eEPiGGtN27gAthq5Rhkter+xmzsFJt6iVFGkR+suB2T5m4NnJt0JMJ4GfAoCa1l2Qr+8UYSB3kMazEUW9ZzpAh3qNXhx++4HBGGDSXa1p6DBVBI/AXWSVwM2eR3LU1P+cwpvFO3SSW9nPkoPJTW9mfxnAvrVS6xiQ1GyBUc62OjXu9JkyncorB5i0uQQO/rAc/GYO2b1OW/jU19UA5iT9mHp6kHfsT6HzS90xTT3wHJBiaoPW26JS49lHjWDZFp/TRjMh2hZq/I4tMGyAqYCEUUVbyjMSot9RMuXsE0rhb6NUUmqkPKf1pOjUbj2NbbkPeSw1Ib9eo5+uIOIM/9yy/LVB5T2RUNcrp58rb8nnUJ+IJd1vksQJkcUpKbUbV2YakriTHBRnol3hrrW9GzBb5WIYIOclMLRx4xkMHsMJNs607VgpiIi6Kis1kD7ZGzHiIcqWLA8x7axl4r8iy1EIVkrhtOd/Hbf9UafrcSbnJvrO8j7DweR5WwiV6Twb1pt9BrRLhhbvuPiiMw/0fnyarkO6LKQngTP8qCJox9ihshb9dYoiQ='
           basedir: target/config
 
 encrypt:
