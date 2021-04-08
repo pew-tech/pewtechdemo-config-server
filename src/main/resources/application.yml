@@ -31,9 +31,17 @@ spring:
     config:
       server:
         git:
-          uri: git@github.com:pew-tech/pewtechdemo-config-server-repo.git
-          ignoreLocalSshSettings: true
+          uri: https://github.com/pew-tech/pewtechdemo-config-server-repo.git
+          username: svc-account-config-server-dev
+          password: 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
           basedir: target/config
+
+encrypt:
+  keyStore:
+    location: classpath:config-server.jks
+    password: pt3d3m0-cs-s70r3
+    alias: config-server-key
+    secret: pt3d3m0-cs-s70r3
 
 ---
 spring:
