@@ -2,24 +2,25 @@ server:
   port: 8888
   ssl:
     enabled: true
-    key-store: classpath:jorgesmacbookpro.jks
-    key-store-password: '{cipher}AgC9G7CG1yKZdCqYZaDOO0Yqeb7DaTAM6hcua3VJNs17xx4j4iwFUmSzH6HKBKjulvbD4SI2YvzLJXH+Osf6yJ11Cbxdi0wU2bNCbqmo/NnQX7ceOuXlnX741p1iV7bWTPDNqJg41yqn89GTiku3IUt0f6ALyZ6wFxDg3JkuFOJfOeRh4CoyQCp1yKs77uVM+Z4tBHZn7vpmmzqGAQUrFE8V/glB2T7+UJXMWTVDKWU9gUEV0mGXfkUYWUF23F2u7U4tx5w+YRWbVKish1selY/UZWzDyrJsZhYiPLc1pZaxH+C03S1LFaLPSAQ3INtyGLkaz40ZuyagF1rVBJvahqVVFd0p8SStHrRaqklT2qvcVBldQ8dNk5rbAE4R6w3oLJfrQmuxoT0GFy+wcfWgTFiew0AFjCrhxygySpqPO2LMfwwxb/Weczv0T0bhcHm82b4MqtjDvJy7Glg9RnTsxb4FUdWTO4ig9UObla070Jf8CSvapIobCoLoQVBtaii8uCPGKYX28U5qwL2pMF2ag1wncbGpVgG47iE5Fr7PthNuGtYUOFf0nfgGt4SfnOizTt4ODAtKTwFuhdna457Dc9WLfKlW6RjVlp/tzUUwPRfLD/1f1OJWRxRY9nZcnkLcRVouiieWxn5Q2Kl3d5dX44OnRLGLTqcm2dIWK3QH4uJF6KmvHEV9NS0kIRpmXOQtfYlQYBml62P6Xx1huORUB76tj145kn174Wr2CoTl6WISLQ=='
+    key-store: /etc/certs/ssl/jks/jorgesmacbookpro.jks
+    key-store-password: '{cipher}AgAAxBIxPh1LzqawS0DmvgtyZweutGs+b8GPfNGMoc2p/gROVuABIZwb0LnKKqRdl0DWKC7S9Uuo/16y9SD1ZrVBdYjixQEpoRpBrPht8QS9M8qXqxJFbo2dPqOJhZ1yKWRP+/NrAClxzUJkLgd3UdSmEnltVIzDBNkNovTi6pWua0yh1dvKuk/B7WyIfJK5Y0z/nIgykWWq50cw1C8zYuhYY9mp2l98+wKr6LgIsfQLkX8mKqqCunkAc2Cjm31jUDMu9qnP2v/5fSW/M7Jkf56gkmJEonykzDYoFvP7n7oAPVfd+n11gUpwai4Z1LQlibtWKD1iKQmubyYcepYvZXdUoNqyGOM4NyNq2FjM0CSiAeCNzqvRWzJcOYL3Rvyp4C/OW7ejSw+yeeMa1cTToYfJQYQcU5hPjbRzcxGuvEeOuzY1kG3ov5v/OCXpUZ9vtVw9DjdLgrmuKenB8bpNzaWftzt2MVa9Jkrg1gIIuN5nr4KZLWSOoV71o641nx3RgGXl/c4OCG5OoWqqnj/CX6CYc6BS4JyLRuEqWKUfj5eLPdNTuWigtbIbureXyg4/dC1mhIr4+ztQmwjMJlg5usLBP6cvXTuQDKTibwwCCaeB90NvMIlg32Y++6V43dxgXW98JV1C3ubFaVWa8jipL46iFvZ2zSHWVQcuhackRe+QbZLwTkZidhY9uTvsjN8yUFVlzyFmMMtABJ9n3O1YTO08oFH8gW4uOiKuio1Posh0gQ=='
+  servlet:
+    context-path: /pewtechdemo-config-server
 
 management:
   endpoints:
     web:
-      base-path: "/admin"
-      exposure:
-        include: "*"
+      base-path: "${server.servlet.context-path}/admin"
+
   endpoint:
     env:
       post:
-        enabled: true
+        enabled: false
 logging:
   level:
     com.netflix.discovery: 'OFF'
     org.springframework.cloud: 'DEBUG'
-    
+
 eureka:
   instance:
     leaseRenewalIntervalInSeconds: 10
